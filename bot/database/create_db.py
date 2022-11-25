@@ -1,12 +1,11 @@
-import os
 import sqlite3
 
-if not (PATH_TO_DB := os.getenv('PATH_TO_DB')):
-    PATH_TO_DB = 'database/bot.db'
+from bot.config import load_config
 
 
 def create_db() -> None:
-    with sqlite3.connect(PATH_TO_DB) as connection:
+    config = load_config()
+    with sqlite3.connect(config.misc.path_to_db) as connection:
         cur = connection.cursor()
 
         cur.execute('''CREATE TABLE IF NOT EXISTS users (
