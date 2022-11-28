@@ -4,3 +4,7 @@ class DotenvFileDoesNotExist(Exception):
 
 class EnvironmentVariableNotSet(Exception):
     pass
+
+
+class InvalidArgumentPassed(Exception):
+    pass
