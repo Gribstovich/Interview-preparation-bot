@@ -1,1 +1,2 @@
+from .edit_buttons import admin_edit_tasks_button
 from .register_admin_handlers import register_admin_handlers
