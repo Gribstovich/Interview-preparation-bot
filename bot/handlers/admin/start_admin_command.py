@@ -2,7 +2,7 @@ from aiogram.dispatcher import FSMContext
 from aiogram.types import Message
 
 from bot.config.locales import get_help_message_content
-from bot.keyboards.admin import create_admin_main_kb
+from bot.keyboards import create_admin_main_kb
 
 
 async def start_admin_command(message: Message, state: FSMContext) -> None:
