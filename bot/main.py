@@ -13,9 +13,9 @@ def register_all_filters(dp: Dispatcher):
     dp.filters_factory.bind(IsAdmin)
 
 
-def register_all_handlers(dp: Dispatcher):
-    register_admin_handlers(dp)
-    register_user_handlers(dp)
+async def register_all_handlers(dp: Dispatcher):
+    await register_admin_handlers(dp)
+    await register_user_handlers(dp)
 
 
 async def main():
@@ -26,7 +26,7 @@ async def main():
     dp = Dispatcher(bot, storage=storage)
 
     register_all_filters(dp)
-    register_all_handlers(dp)
+    await register_all_handlers(dp)
 
     create_db()
 
