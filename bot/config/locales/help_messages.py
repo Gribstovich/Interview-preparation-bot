@@ -1,7 +1,9 @@
 from bot.config import load_config
 
-_messages = {'start_admin': {'en': 'You are in administrator mode',
-                             'ru': 'Вы в режиме администатора'}
+_messages = {'admin mode': {'en': 'You are in administrator mode',
+                            'ru': 'Вы в режиме администатора'},
+             'select action': {'en': 'Select an action',
+                               'ru': 'Выберите действие'}
              }
 
 

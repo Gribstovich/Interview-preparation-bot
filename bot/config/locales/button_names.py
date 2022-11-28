@@ -3,7 +3,12 @@ from bot.config import load_config
 _buttons = {'newsletter': {'en': 'newsletter', 'ru': 'Рассылка'},
             'help': {'en': 'help', 'ru': 'Помощь'},
             'user mode': {'en': 'User mode', 'ru': 'Режим пользователя'},
-            'edit tasks': {'en': 'Edit tasks', 'ru': 'Редактировать задачи'}
+            'edit tasks': {'en': 'Edit tasks', 'ru': 'Редактировать задачи'},
+            'create category': {'en': 'Create category', 'ru': 'Создать категорию'},
+            'del category': {'en': 'Delete category', 'ru': 'Удалить категоирю'},
+            'create task': {'en': 'Create task', 'ru': 'Создать задачу'},
+            'del task': {'en': 'Delete task', 'ru': 'Удалить задачу'},
+            'step back': {'en': 'Step back', 'ru': 'Назад'}
             }
 
 
