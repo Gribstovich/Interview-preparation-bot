@@ -1,6 +1,8 @@
 import os
 from dataclasses import dataclass
 
+from . import check_env_variables
+
 
 @dataclass
 class TgBot:
@@ -22,6 +24,7 @@ class Config:
 
 
 def load_config():
+    check_env_variables()
     return Config(
         tg_bot=TgBot(
             admin_ids=set(map(int, os.getenv('ADMIN_IDS').split(';'))),
