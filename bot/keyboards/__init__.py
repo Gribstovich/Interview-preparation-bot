@@ -1,1 +1,2 @@
-from .admin_keyboards import create_admin_main_kb, create_admin_edit_kb
+from .admin_keyboards import create_admin_main_kb, create_admin_edit_kb, create_admin_manage_kb
+from .general_keyboards import create_categories_kb
