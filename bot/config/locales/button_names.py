@@ -7,8 +7,9 @@ _buttons = {'newsletter': {'en': 'newsletter', 'ru': 'Рассылка'},
             'create category': {'en': 'Create category', 'ru': 'Создать категорию'},
             'del category': {'en': 'Delete category', 'ru': 'Удалить категоирю'},
             'create task': {'en': 'Create task', 'ru': 'Создать задачу'},
-            'del task': {'en': 'Delete task', 'ru': 'Удалить задачу'},
-            'step back': {'en': 'Step back', 'ru': 'Назад'}
+            'delete task': {'en': 'Delete task', 'ru': 'Удалить задачу'},
+            'step back': {'en': 'Step back', 'ru': 'Назад'},
+            'confirm': {'en': 'Confirm', 'ru': 'Подтвердить'}
             }
 
 
