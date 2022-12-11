@@ -1,6 +1,6 @@
 from aiogram.types import ReplyKeyboardMarkup
 
-from .create_universal_keyboard import create_universal_kb
+from .keyboard_template import create_universal_kb
 
 
 async def create_admin_main_kb() -> ReplyKeyboardMarkup:
@@ -11,8 +11,14 @@ async def create_admin_main_kb() -> ReplyKeyboardMarkup:
 
 
 async def create_admin_edit_kb() -> ReplyKeyboardMarkup:
-    markup = await create_universal_kb(button_names=['create category', 'del category',
-                                                     'create task', 'del task',
+    markup = await create_universal_kb(button_names=['create category', 'delete category',
+                                                     'create task', 'delete task',
                                                      'step back'],
                                        row_width=2)
+    return markup
+
+
+async def create_admin_manage_kb(confirm: bool = False) -> ReplyKeyboardMarkup:
+    button_names = ['step back', 'confirm'] if confirm else ['step back']
+    markup = await create_universal_kb(button_names=button_names)
     return markup
